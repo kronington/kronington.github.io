@@ -1,25 +1,115 @@
-
 <!--Welcome to my wicked website!-->
 
-<!DOCTYPE html> <html> <head> <link href="https://fonts.googleapis.com/css2?family=Palatino:wght@500;900&display=swap" rel="stylesheet"> <title>Kronington</title> <style> @keyframes colorChange { 0% {background: #202025;} 50% {background: #252530;} 100% {background: #202025;} }
-body { animation: colorChange 20s infinite; color: #eee; font-family: 'Palatino', serif; display: flex; justify-content: center; align-items: center; height: 90vh; margin: 0; }
 
-.content { max-width: 900px; margin: 0 auto; text-align: center; }
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Arial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Optima&display=swap" rel="stylesheet">
+    <title>Kronington</title>
+    <style>
+        @keyframes colorChange {
+            0% {
+                background: #202025;
+            }
 
-.bold-sleek-font { font-size: 50px; font-weight: bold; }
+            50% {
+                background: #252530;
+            }
 
-.bottom-img { height: 170px; }
+            100% {
+                background: #202025;
+            }
+        }
 
-.right-side, .left-side { position: fixed; bottom: 0; transform: translateY(50%); }
+        body {
+            animation: colorChange 20s infinite;
+            color: #eee;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            margin: 0;
+        }
 
-.right-side { right: 50%; transform: translateX(525px); }
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
 
-.left-side { left: 50%; transform: translateX(-650px); }
+        .bold-sleek-font {
+            font-size: 50px;
+            font-weight: bold;
+        }
 
-iframe { border: none; margin-top: 20px; }
+       .bottom-img {
+            height: 170px;
+            image-rendering: -moz-crisp-edges;       /* Firefox */
+            image-rendering: -webkit-optimize-contrast;     /* Chrome (and eventually Safari) */
+            image-rendering: -o-crisp-edges;       /* Opera */
+            image-rendering: pixelated;    /* Standard */
+            image-rendering: optimize-contrast;   /* non-standard for Webkit, most likely to become standard */
+        }
 
-.social-icons { display: inline-block; margin: 0 10px; width: 50px; height: 50px; filter: brightness(0) invert(1); transition: filter 0.3s ease-in-out; }
+        .optima-style {
+            font-family: 'Optima', sans-serif;
+        }
 
-.social-icons:hover { filter: brightness(1) invert(1); } </style>
+        .right-side, .left-side {
+            position: fixed;
+            bottom: 0;
+            transform: translateY(50%);
+        }
 
-</head> <body> <div class="content"> <h1 class="bold-sleek-font">Kronington</h1> <p>Game Developer and Music Composer</p> <div> <a href="https://www.youtube.com/@Kronington" target="_blank"><img class="social-icons" src="https://i.ibb.co/RhSRvKM/youtube.png"></a> <a href="https://twitter.com/Kronington" target="_blank"><img class="social-icons" src="https://i.ibb.co/LY7B6QH/twitter.png"></a> <a href="https://www.imdb.com/name/nm13723234/" target="_blank"><img class="social-icons" src="https://i.ibb.co/tXbLn2w/brand-imdb-icon-158850.webp"></a> <a href="mailto:kronmjeku@gmail.com" target="_blank"><img class="social-icons" src="https://i.ibb.co/tqhdt4h/mail.png"></a> </div> <iframe src="https://store.steampowered.com/widget/1865670/" width="646" height="190"></iframe> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/6qrbNrgV1O8t38wESpfb8j?utm_source=generator&theme=0" width="650" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> </div> <div class="right-side"> <img class="bottom-img" src="kakkoi-gun.gif"> </div> <div class="left-side"> <img class="bottom-img" src="kakkoi suku.png"> </div> </body> </html>
+        .right-side {
+            right: 50%;
+            transform: translateX(525px);
+        } 
+        
+        .left-side { 
+            left: 50%; 
+            transform: translateX(-650px); 
+        }   
+        
+        iframe { 
+            border: none; 
+            margin-top: 20px; 
+        } 
+       
+        .social-icons { 
+            display: inline-block; 
+            margin: 0 10px; 
+            width: 50px; 
+            height: 50px; 
+            filter: brightness(0) invert(1); 
+            transition: filter 0.3s ease-in-out; 
+        } 
+        
+        .social-icons:hover { 
+            filter: brightness(1) invert(1); 
+        } 
+    </style> 
+</head> 
+<body> 
+    <div class="content"> 
+        <h1 class="bold-sleek-font">Kronington</h1> 
+        <p class="optima-style">Game Developer and Music Composer</p> 
+        <div> 
+            <a href="https://www.youtube.com/@Kronington" target="_blank"><img class="social-icons" src="https://i.ibb.co/RhSRvKM/youtube.png"></a> 
+            <a href="https://twitter.com/Kronington" target="_blank"><img class="social-icons" src="https://i.ibb.co/LY7B6QH/twitter.png"></a> 
+            <a href="https://www.imdb.com/name/nm13723234/" target="_blank"><img class="social-icons" src="https://i.ibb.co/tXbLn2w/brand-imdb-icon-158850.webp"></a> 
+            <a href="mailto:kronmjeku@gmail.com" target="_blank"><img class="social-icons" src="https://i.ibb.co/tqhdt4h/mail.png"></a> 
+        </div> 
+        <iframe src="https://store.steampowered.com/widget/1865670/" width="646" height="190"></iframe> 
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/6qrbNrgV1O8t38wESpfb8j?utm_source=generator&theme=0" width="650" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> 
+    </div> 
+    <div class="right-side"> 
+        <img class="bottom-img" src="kakkoi-gun.gif"> 
+    </div> 
+    <div class="left-side"> 
+        <img class="bottom-img" src="kakkoi suku.png"> 
+    </div> 
+</body> 
+</html>
